@@ -2318,7 +2318,7 @@ p.normal {
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
 			padding: 0 1.5em 0 1.5em;
-			background-color: rgba(0, 0, 0, 0.418); /*HIT*/
+			background-color: rgba(0, 0, 0, 0.6); /*HIT*/
 			text-shadow: 1px 1px #000000;
 		}
 
@@ -2360,7 +2360,7 @@ p.normal {
 
 	.dropotron {
 		background: #222835 url("images/overlay.png");
-		background-color: rgba(0, 0, 0, 0.377); /*HIT*/
+		background-color: rgba(0, 0, 0, 0.6); /*HIT*/
 		text-shadow: 1px 1px #000000;
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
