@@ -3293,6 +3293,25 @@ a:hover {
 						#copyright ul li:first-child {
 							margin-top: 0;
 						}
-					
+		
+
+	}
+
+	/* Normal video */
+	.video {
+		width: 450px;
+		height: 253px;
+		display: block; /*Importante para que el vídeo esté en el centro*/
+		 margin: 0 auto;
+		margin-bottom: 2em;
+	}
+	
+	/* Youtube videos */
+	.yvideo {
+		width: 450px;
+		height: 253px;
+		display: block; /*Importante para que el vídeo esté en el centro*/
+ 		margin: 0 auto;
+		margin-bottom: 2em;
 	}
 
