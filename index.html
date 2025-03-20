@@ -21,7 +21,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<h1>Ricardo Caballero</h1>
-							<p>Game Design Portfolio</p>
+							<p>Game Developer</p>
 						</div>
 
 					<!-- Nav -->
@@ -31,24 +31,20 @@
 								<li>
 									<a href="#">Games</a>
 									<ul>
-										<li><a href="bmt.html">Burn Me Twice</a></li>
-										<li><a href="pptm.html">PAW Patrol The Movie</a></li>
-										<li><a href="ht4.html">Hotel Transylvania</a></li>
 										<li><a href="tmnt.html">TMNT: Mutants Unleashed</a></li>
-										<!--<li>
-											<a href="#">Sed consequat</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Amet consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Sed feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Nisl tempus</a></li>-->
+										<li><a href="ht4.html">Hotel Transylvania</a></li>
+										<li><a href="bmt.html">Burn Me Twice</a></li>
 									</ul>
 								</li>
-								<!--<li><a href="left-sidebar.html">Personal Work</a></li>-->
+								<li>
+									<a href="#">Personal Work</a>
+									<ul>
+										<li><a href="gd.html">Game Design</a></li>
+										<li><a href="qld.html">Quest & Level Design</a></li>
+										<li><a href="nd.html">Narrative Design</a></li>
+										</ul>
+								</li>
+								<li><a href="blog.html">Blog</a></li>
 								<li><a href="about-me.html">About me</a></li>
 								<li><a href="contact.html">Contact</a></li>
 							</ul>
@@ -70,37 +66,36 @@
 
 			<!-- Highlights -->
 				<section id="highlights" class="wrapper style3">
-					<div class="title">Latest projects</div>
-					<div class="container">
+					<div class="title">Featured Projects</div>
+					<div class="container reveal">
 						<div class="row aln-center">
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<div class="image featured"><img src="images/index_bmtproject.jpg" /></div>
-									<h3>Burn Me Twice</h3>
-									<p>Put on your witch hat and use your powers to discover the secrets of the mysterious town of Düstenburg</p>
-									<br>
+									<div class="image featured"><img src="images/index_tmntproject.jpg" /></div>
+									<h3>TMNT: Mutants Unleashed (2024)</h3>
+									<p>Take on the role of Leo, Raph, Donnie and Mickey to protect the streets of New York from mutant mayhem!</p>
 									<ul class="actions">
-										<li><a href="bmt.html" class="button style1">More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<div class="image featured"><img src="images/index_pptmproject.jpg" /></div>
-									<h3>PAW Patrol The Movie: Adventure City Calls</h3>
-									<p>PAW Patrol is on a roll… to Adventure CITY! Play as your favorite pups on exciting rescue missions and stop Humdinger's selfish schemings!</p>
-									<ul class="actions">
-										<li><a href="pptm.html" class="button style1">More</a></li>
+										<li><a href="tmnt.html" class="button style1">More</a></li>
 									</ul>
 								</section>
 							</div>
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
 									<div class="image featured"><img src="images/index_ht4project.jpg" /></div>
-									<h3>Hotel Transylvania: Scary-Tale Adventures</h3>
+									<h3>Hotel Transylvania: Scary-Tale Adventures (2022)</h3>
 									<p>Take control of Drac and Mavis and explore classic fairy tale worlds, including Little Red Riding Hood, The Emperor’s New Clothes and Ali Baba and the Forty Thieves!</p>
 									<ul class="actions">
 										<li><a href="ht4.html" class="button style1">More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<div class="image featured"><img src="images/index_bmtproject.jpg" /></div>
+									<h3>Burn Me Twice (2020)</h3>
+									<p>Put on your witch hat and use your powers to discover the secrets of the mysterious town of Düstenburg</p>
+									<ul class="actions">
+										<li><a href="bmt.html" class="button style1">More</a></li>
 									</ul>
 								</section>
 							</div>
@@ -155,6 +150,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				window.addEventListener('scroll', reveal);
+
+				function reveal()
+				{
+					var reveals = document.querySelectorAll('.reveal');
+
+					for(var i = 0; i < reveals.length; i++){
+						var windowheight = window.innerHeight;
+						var revealtop = reveals[i].getBoundingClientRect().top;
+						var revealpoint = 150;
+
+						if (revealtop < windowheight - revealpoint){
+							reveals[i].classList.add('active');
+						}
+						else{
+							reveals[i].classList.remove('active');
+						}
+					}
+				}
+			</script>
 
 	</body>
 </html>
