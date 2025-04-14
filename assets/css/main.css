@@ -2127,7 +2127,87 @@ p.normal {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.gif") center center; /*HIT*/
+		background: url("../../images/banner_main.gif") center center; /*HIT*/
+		background-size: cover;
+		padding: 0;
+	}
+
+	#gdheader { /*GD header*/
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		height: 24em;
+		background: url("../../images/banner_gd.png") center center; /*HIT*/
+		background-size: cover;
+		padding: 0;
+	}
+
+	#qldheader { /*QLD header*/
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		height: 24em;
+		background: url("../../images/banner_qld.png") center center; /*HIT*/
+		background-size: cover;
+		padding: 0;
+	}
+
+	#ndheader { /*ND header*/
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		height: 24em;
+		background: url("../../images/banner_nd.png") center center; /*HIT*/
+		background-size: cover;
+		padding: 0;
+	}
+
+	#blogheader { /*Blog header*/
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		position: relative;
+		height: 24em;
+		background: url("../../images/banner_blog.png") center center; /*HIT*/
 		background-size: cover;
 		padding: 0;
 	}
