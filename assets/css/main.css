@@ -3480,3 +3480,31 @@ a:hover {
 		font-size: 13px;
 		display:none;
 	  }
+
+
+	.aboutme {
+		display: flex;
+  		align-items: right;
+		justify-content: space-around;
+		gap: 5rem;
+	}
+
+	.portrait {
+		width: 100%;
+		margin-right: 10px;
+		max-width: 100%;
+		object-fit: cover;
+		vertical-align: middle;
+
+		--b: 2px; /* border thickness */
+		--c: #0000 90deg, rgb(255, 255, 255) 0; /* define the color here */
+  		padding: 10px;
+		padding-bottom: 1px;
+  		background:
+    	conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--c)) 0 0,
+    	conic-gradient(from 180deg at top    var(--b) right var(--b), var(--c)) 100% 0,
+    	conic-gradient(from 0deg   at bottom var(--b) left  var(--b), var(--c)) 0 100%,
+    	conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--c)) 100% 100%;
+  		background-size: 50px 50px; /* adjust border length here */
+  		background-repeat: no-repeat;
+	}
