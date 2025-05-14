@@ -3486,7 +3486,16 @@ a:hover {
     flex-wrap: right;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+	}
+
+	.aboutme2 img{
+	max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    flex: 1 1 auto;
+    /* Allow images to grow and shrink */
+    object-fit: cover;
 	}
 
 	.aboutme img {
