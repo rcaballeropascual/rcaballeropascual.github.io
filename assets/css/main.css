@@ -2341,6 +2341,26 @@ p.normal {
 	padding: 0;
 }
 
+#header5 {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	position: relative;
+	height: 24em;
+	background: url("../../images/banner05.jpg") center center; /*HIT*/
+	background-size: cover;
+	padding: 0;
+}
+
 	#header3:before {
 		content: '';
 		position: absolute;
