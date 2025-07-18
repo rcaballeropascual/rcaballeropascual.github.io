@@ -51,7 +51,6 @@
 					</nav>
 			</section>
 
-
 			<!-- Main -->
 			<section id="main" class="wrapper style2">
 				<div class="title">Project #01</div>
@@ -118,20 +117,85 @@
 										<div class="image featured">
 											<img src="images/Projects/IRON/iron_pic01.png"/>
 										</div>
-										<br/>
-										<br/>
-										<br/>
-										<center><p><i>Currently drafting this section. Please check back soon!</i></p></center>
+										<p><i2><b2>'IRONSKINS'</b2> (pending release) is a <b2>turn-based tactical game</b2> that blends <b2>RPG elements</b2> with a <b2>dynamic narrative</b2>, where player decisions reshape the story. The plot centers on a <b2>European squad of pilots</b2> operating mechs called ironskins as they hunt down the <b2>Crimson Brigade</b2>, a mercenary group secretly fueling a <b2>civil war</b2> in <b2>Cyprus</b2>.</i2></p>
+										<p>I started working on this project in February 2023, right after joining <b2>Aheartfulofgames S.L.</b2></br>To my surprise, Ironskins was already complete and fully functional. However, management had discovered <b2>two critical issues</b2> too late: the <b2>mechanics</b2> were <b2>hard to understand</b2>, and the <b2>gameplay felt long and tedious</b2>.</p>
+										<p>I was hired to join the small team <b2>leading a full mechanical overhaul</b2> of the game. We <b2>redesigned almost everything</b2> from scratch, making sure to preserve and strengthen what already worked.</p>
+										<p>It was a massive challenge, since my tasks covered design areas I was less familiar with, such as weapon balancing and economy design. The biggest challenge was <b2>polishing every level</b2>, which involved:</p>
+										<ul>
+											<li><b2>Correcting</b2> and <b2>refining dialogue</b2> and <b2>camera positions</b2>.</li>
+											<li><b2>Verifying</b2> that all narrative <b2>triggers</b2> fired correctly.</li>
+											<li><b2>Balancing difficulty</b2> by <b2>adjusting weapons</b2> and <b2>repositioning elements</b2> in each level.</li>
+											<li><b2>Introducing</b2> <b2>music changes</b2> and <b2>events</b2> at key narrative moments.</li>
+											<li><b2>Reviewing</b2> and <b2>improving level design</b2> through carefully calculated <b2>tweaks</b2> to optimize the player experience.</li>										
+										</ul>
 										<div class="image featured">
 											<img src="images/Projects/IRON/iron_pic08.png" width="" height="" />
+											<center><i>The player can recruit new pilots for their squadron depending</br> on the decisions they make during the game.</i></center>
+										</div>
+										<p>My first task was <b2>balancing the game's entire arsenal</b2>. I began by studying each variable and how they interacted during gameplay. The weapons were split into <b2>two categories</b2>—<b2>ranged</b2> and <b2>melee</b2>—whose lethality fluctuated based on the pilot's stats. Ranged weapons consumed <b2>targeting points</b2> to fire, generated <b2>heat</b2>, and lost targeting points due to <b2>recoil</b2>. Some could also be fitted with <b2>AI modules</b2> that enhanced pilot stats or came in <b2>ballistic</b2>, <b2>electromagnetic</b2>, or <b2>fusion variants</b2>.</p>
+										<p>The sheer number of parameters was a bit overwhelming, but I managed to balance these variables without diluting each weapon's thematic identity, while ensuring a <b2>clear progression</b2>: as players advanced, they acquired <b2>increasingly powerful weapons to face more lethal enemies</b2>.</p>
+										<p>Later, I took responsibility for balancing the <b2>artillery</b2>—grenades and missiles—the <b2>support systems</b2> (rapid cooling, enhanced mobility, extra targeting points, and emergency flares)—and all other components that let players <b2>customize</b2> their <b2>squad's Ironskins</b2>.</p>
+										<div class="image featured">
+											<img src="images/Projects/IRON/iron_pic09.png" width="" height="" />
+											</br><center><i>To carry out the balancing of ironskin parts it was necessary to organize everything in spreadsheets.</br>In this way it was easier to modify the variables.</i></center>
+										</div>
+										<p>'IRONSKINS' explores the scars that war leaves on those who fight it. To reflect the impact of <b2>trauma</b2> on pilots during combat, the game initially included a <b2>“stress” mechanic</b2>: taking damage or losing Ironskin components would <b2>build stress</b2> in the pilot. When certain thresholds were exceeded, <b2>character-unique effects triggered</b2>—perhaps one pilot would panic and retreat, while other would stay calm and shoot more accurately.</p>
+										<p>Although this mechanic was unique and engaging, it was <b2>almost cut due to time constraints</b2> during the overhaul. Implementing specific "stress-out" behaviours for each of the characters in the game would take many weeks of work and iteration, after all.</p>
+											
+										<p>However, I took charge of redesigning it to fit the game's new vision. My proposal involved:</p>
+										<ul>
+											<li>Defining a <b2>limited set of "stress effects"</b2> (for example, one stress effect restricts a pilot to a single action per turn, while another compels them to automatically fire at any enemy within their attack range).</li>
+											<li>Allowing <b2>combinations</b2> of these "stress effects" to generate <b2>"stress-out behaviours"</b2>. Unlike the original proposal, <b2>different characters can share the same “stress-out behaviours"</b2> .</li>
+											<li>Keeping <b2>implementation simple</b2>. The coding team only needed to prepare the initial "stress effects", as any designer could easily implement the "stress-out behaviours" on their own.</li>								
+										</ul>
+										<p>Thanks to this design, the coding team <b2>integrated it in under a week</b2>. I then “translated” the pre-overhaul system into the new framework, ensuring we <b2>retained the stress mechanic</b2> without compromising the development schedule.</p>
+										</article>
+										<div class="image featured">
+											<img src="images/Projects/IRON/iron_pic10.png" width="" height="" />
+											</br><center><i>When pilots become stressed, their behaviour patterns can change dramatically.</i></center>
+										</div>
+										<p>I also conducted a <b2>comprehensive review</b2> of <b2>every level</b2>, because although they were already designed and implemented, they lacked balance and hadn't been thoroughly playtested—many hadn't functioned correctly for some time.</p>
+										<p>Some stages demanded <b2>deeper work</b2>. In Rules of Engagement, for example, the <b2>goal</b2> was to <b2>teach players to use cover against a squad of snipers</b2>. But I found that it was possible to <b2>dash</b2> from one end to the other <b2>without using cover</b2> and suffer <b2>no real penalty</b2>.</p>
+										<p>My intervention included:</p>
+										<ul>
+											<li><b2>Rebalancing</b2> the snipers and <b2>placing them in strategic locations</b2> to pose a <b2>genuine threat</b2>.</li>
+											<li><b2>Repositioning cover</b2> to create <b2>two distinct paths</b2>: one direct and risky, the other longer but safer.</li>
+											<li><b2>Tweaking the level design</b2> so that <b2>using cover</b2> became the <b2>optimal way</b2> to progress without unnecessary losses.</li>								
+										</ul>
+										<p>With these changes, Rules of Engagement transformed from a simple run-through into a <b2>clear tactical challenge</b2> that reinforced the mechanics we wanted players to learn.</p>
+										<div class="image featured">
+											<img src="images/Projects/IRON/iron_pic11.png" width="" height="" />
+											</br><center><i>Quick sketch I made on a screenshot of the Rules of Engagement map to redesign the level.</i></center>
+										</div>
+										<p>'IRONSKINS' also features an <b2>extensive repertoire of cutscenes</b2>, most of which I designed and implemented. When I joined the project, my experience in shot composition was limited, but after two years of continuous work I believe the final result meets expectations.</p>
+										<p>The real challenge arose from <b2>strict animation constraints</b2>: I only had at my disposal <b2>run and walk animation cycles</b2> because actions like firing or having your mech destroyed were entirely code-driven. To deliver elaborate cutscenes, I had to devise <b2>creative workarounds</b2> that made the most of these minimal resources.</p>
+										<p>For example, in a rescue mission I staged characters fleeing <b2>missiles and bursts of gunfire</b2> from <b2>pursuers kept deliberately off-screen</b2> (since there were no shooting animations), generating the necessary tension to drive the story without additional animations.</p>
+										<div class="image featured">
+											<img src="images/Projects/IRON/iron_pic12.png" width="" height="" />
+											</br><center><i>All cutscenes had to be made with very limited animation resources.</i></center>
+										</div>
+										<p>Looking back, I'm incredibly proud of everything we achieved with 'IRONSKINS'. While the project posed <b2>significant challenges</b2>, taking the lead across so many different areas allowed me to elevate the game's quality and <b2>test my skills</b2> in design fields I don't normally explore.</p>
+										<div class="image featured">
+											<img src="images/Projects/IRON/iron_pic13.png" width="" height="" />
+										</div>
+										<!--
+									<article>
+										<div class="overflow-hidden before-after-wrapper rounded-3xl">
+  											<div class="before-image-wrapper" style="width: 50%;">
+   												<div class="before-image" style="background-image: url('images/Projects/IRON/iron_pic09.png');"></div>
+  											</div>
+											<div class="after-image" style="background-image: url('images/Projects/IRON/iron_pic09.png');"></div>
+											<span class="handle draggable"></span>
 										</div>
 									</article>
+									-->
 								</div>
 
 						</div>
 					</div>
 				</div>
 			</section>
+			
 
 		<!-- Highlights -->
 			<section id="highlights" class="wrapper style3">
@@ -141,7 +205,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic02.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>The game follows a squadron of specialized pilots on a suicide revenge mission behind enemy lines.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -149,7 +213,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic03.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>The core of the tactical system is positioning for target acquisition.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -157,7 +221,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic04.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>Contrary to most other tactics games, 'IRONSKINS' is structured around the idea of simultaneous turns.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -165,7 +229,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic05.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>What happens to characters in battle can influence narrative branching throughout the campaign.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -173,7 +237,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic06.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>The player can customize their ironskins with different parts to optimize strategies.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -181,7 +245,7 @@
 						<div class="col-4 col-12-medium">
 							<section class="highlight">
 								<div class="image featured"><img src="images/Projects/IRON/iron_pic07.gif" /></div>
-								<p>Lorem ipsum</p>
+								<p>System is deterministic. The only source of randomness being enemy AI decision-making.</p>
 								<ul class="actions">
 								</ul>
 							</section>
@@ -237,6 +301,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/before-and-after.js"></script>
 </body>
 </html>

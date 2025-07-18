@@ -3537,3 +3537,108 @@ a:hover {
   		background-size: 50px 50px; /* adjust border length here */
   		background-repeat: no-repeat;
 	}
+
+
+/*Slider*/
+
+.before-after-wrapper {
+  outline: 4px solid #ffffff;
+  position: relative;
+  aspect-ratio: 3/2;
+}
+
+.before-after-wrapper::before {
+  background-color: hsla(172, 61%, 82%, 75%);
+  border-radius: 40px;
+  top: 10px;
+  color: green;
+  content: 'before';
+  left: 10px;
+  opacity: 0;
+  padding: 5px 10px;
+  position: absolute;
+  transition: opacity 200ms ease-in-out;
+  z-index: 15;
+}
+
+:global(.before-after-wrapper.show-before::before) {
+  opacity: 1;
+}
+
+.before-after-wrapper::after {
+  background-color: hsla(172, 61%, 82%, 75%);
+  border-radius: 40px;
+  top: 10px;
+  color: green;
+  opacity: 0;
+  padding: 5px 10px;
+  position: absolute;
+  right: 10px;
+  transition: opacity 200ms ease-in-out;
+  z-index: 15;
+  content: 'after';
+}
+
+:global(.before-after-wrapper.show-after::after) {
+  opacity: 1;
+}
+
+.before-image-wrapper {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.before-image {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.after-image {
+  background-size: cover;
+  inset: 0;
+  position: absolute;
+}
+
+.handle {
+  align-items: center;
+  background: #ff4c7c;
+  bottom: 0;
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 4px;
+  z-index: 20;
+}
+
+.handle::before {
+  content: '';
+  position: absolute;
+  inset: 0 -20px;
+}
+
+.handle::after {
+  align-items: center;
+  background: #fd1050;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="hsl(172, 61%, 82%)" d="M505.7 265.7c3-3 3.1-7.9 .2-11.1l-104-112c-3-3.2-8.1-3.4-11.3-.4s-3.4 8.1-.4 11.3L481.7 252 23.3 252l90.3-90.3c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0l-104 104c-3.1 3.1-3.1 8.2 0 11.3l104 104c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L23.3 268l457.4 0-90.3 90.3c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0l104-104z"/></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  color: green;
+  content: '';
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+}
