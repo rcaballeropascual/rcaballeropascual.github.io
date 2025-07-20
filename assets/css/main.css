@@ -3642,3 +3642,18 @@ a:hover {
   min-height: 40px;
   min-width: 40px;
 }
+
+.art-wrapper {
+  width: fit-content;        /* Se adapta al tamaño real de la imagen */
+  max-width: 100%;           /* No se sale del contenedor si es más grande */
+  margin: auto;              /* La centra horizontalmente si lo deseas */
+  padding: 10px;             /* Opcional para darle espacio */
+}
+
+.art-wrapper img {
+  width: auto;
+  height: auto;
+  display: block;            /* Elimina espacio por debajo de la imagen */
+  max-width: 100%;           /* Se adapta si el contenedor es más pequeño */
+  object-fit: contain;       /* Evita deformaciones si decides establecer tamaño */
+}
