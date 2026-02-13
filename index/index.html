@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 	<script src="assets/js/carruselinit.js" defer></script>
+	<script src="assets/js/revealeffect.js" defer></script>
 
 </head>
 
@@ -73,16 +74,20 @@
 
 		<!-- Intro -->
 		<section id="top" class="one dark cover">
-			<div class="container">
+			<div class="top-buttons">
+				<a href="#" target="_blank" class="button-outline">Portfolio (PDF)</a>
+			</div>
 
+			<video autoplay muted loop playsinline id="bg-video">
+				<source src="https://res.cloudinary.com/dgv703tqw/video/upload/v1770983459/banner_ur3dm2.mp4"
+					type="video/mp4">
+			</video>
+
+			<div class="container">
 				<header id="logo-banner">
 					<h1>RICARDO CABALLERO</h1>
 					<p>PORTFOLIO</p>
 				</header>
-				<footer>
-					<a href="../files/cv.html" target="_blank" class="button-outline">Portfolio (PDF)</a>
-				</footer>
-
 			</div>
 		</section>
 
@@ -100,7 +105,7 @@
 				</p>
 				<div class="row">
 					<div class="col-4 col-12-mobile">
-						<article class="item">
+						<article class="item reveal">
 							<a href="../iron.html" class="image fit"><img src="images/posters/index_iron_poster.png"
 									alt="" /></a>
 							<header>
@@ -109,7 +114,7 @@
 								</a>
 							</header>
 						</article>
-						<article class="item">
+						<article class="item reveal">
 							<a href="../ht4.html" class="image fit"><img src="images/posters/index_ht4_poster.png"
 									alt="" /></a>
 							<header>
@@ -120,7 +125,7 @@
 						</article>
 					</div>
 					<div class="col-4 col-12-mobile">
-						<article class="item">
+						<article class="item reveal">
 							<a href="../bmt.html" class="image fit"><img src="images/posters/index_btm_poster.png"
 									alt="" /></a>
 							<header>
@@ -129,7 +134,7 @@
 								</a>
 							</header>
 						</article>
-						<article class="item">
+						<article class="item reveal">
 							<a href="https://www.youtube.com/watch?v=PFcQvXWDvZ0" target="_blank" class="image fit"><img
 									src="images/posters/index_cbtbg_poster.png" alt="" /></a>
 							<header>
@@ -141,7 +146,7 @@
 						</article>
 					</div>
 					<div class="col-4 col-12-mobile">
-						<article class="item">
+						<article class="item reveal">
 							<a href="../pptm.html" class="image fit"><img src="images/posters/index_pptm_poster.png"
 									alt="" /></a>
 							<header>
@@ -150,7 +155,7 @@
 								</a>
 							</header>
 						</article>
-						<article class="item">
+						<article class="item reveal">
 							<a href="../tmnt.html" class="image fit"><img src="images/posters/index_tmnt_poster.png"
 									alt="" /></a>
 							<header>
@@ -182,7 +187,7 @@
 				<div class="swiper main-swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/nightmare.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_nightmare.jpg" alt="" /></a>
 								<header>
@@ -193,7 +198,7 @@
 							</article>
 						</div>
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="https://ricardo-caballero.itch.io/i-am-a-cube-prototype" class="image fit"
 									target="_blank"><img src="images/personal/prsnlwk_cube.jpg" alt="" /></a>
 								<header>
@@ -205,7 +210,7 @@
 							</article>
 						</div>
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/eden.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_eden.jpg" alt="" /></a>
 								<header>
@@ -216,7 +221,7 @@
 							</article>
 						</div>
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/redburrow.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_redburrow.jpg" alt="" /></a>
 								<header>
@@ -239,7 +244,7 @@
 				<div class="swiper main-swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/darkforest_ld.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_darkforest_2.jpg" alt="" /></a>
 								<header>
@@ -250,7 +255,7 @@
 							</article>
 						</div>
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/darkforest.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_darkforest_1.jpg" alt="" /></a>
 								<header>
@@ -273,7 +278,7 @@
 				<div class="swiper main-swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/lightdarkness.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_sw.jpg" alt="" /></a>
 								<header>
@@ -284,7 +289,7 @@
 							</article>
 						</div>
 						<div class="swiper-slide">
-							<article class="item">
+							<article class="item reveal">
 								<a href="../files/bmtc1script.html" class="image fit" target="_blank"><img
 										src="images/personal/prsnlwk_bmt_script.jpg" alt="" /></a>
 								<header>
@@ -321,7 +326,7 @@
 
 				<div class="row">
 					<div class="col-4 col-12-mobile">
-						<article class="item">
+						<article class="item reveal">
 							<a href="../files/blog/badshm.html" class="image fit"><img src="images/blog/blog_badshm.png"
 									alt="" /></a>
 							<header>
