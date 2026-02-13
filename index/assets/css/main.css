@@ -1899,7 +1899,8 @@ article:last-child {
 .main-swiper .swiper-slide {
 	width: 250px;
 	/* Ajusta al tamaño de las tarjetas */
-	font-size: 17px; /* Tamaño del texto */
+	font-size: 17px;
+	/* Tamaño del texto */
 }
 
 .swiper-button-next::after,
@@ -1907,7 +1908,8 @@ article:last-child {
 	color: #fd1050;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
 	font-size: 24px;
 	/* Tamaño por defecto es 44px */
 }
@@ -1918,12 +1920,190 @@ article:last-child {
 }
 
 .swiper-pagination-bullet {
-  background-color: #ccc; /* Color de los bullets inactivos */
+	background-color: #ccc;
+	/* Color de los bullets inactivos */
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #000000; /* Color del bullet activo */
+	background-color: #000000;
+	/* Color del bullet activo */
 }
+
+/* ABOUT ME */
+.aboutme {
+	display: flex;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+/* Contenedor de imagen + botones */
+.portrait-and-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	flex-shrink: 0;
+}
+
+/* Imagen */
+.portrait-and-buttons img {
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Texto */
+.aboutme>div {
+	text-align: left;
+}
+
+@media (max-width: 768px) {
+	.aboutme {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.portrait-and-buttons {
+		flex-shrink: 1;
+		width: 100%;
+	}
+
+	.portrait-and-buttons img {
+		max-width: 300px;
+	}
+}
+
+
+/* BOTÓN NUEVO*
+/* Botón negro plano */
+.button-black {
+	position: relative;
+	display: inline-block;
+	border-radius: 0.35em;
+	padding: 0.75em 2.5em;
+	background-color: #000000;
+	color: #ffffff !important;
+	font-weight: 700;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	background-image: none !important;
+	/* elimina degradados */
+	transform: scale(1);
+	/* estado base */
+
+	transition:
+		background-color 0.35s ease-in-out,
+		transform 0.25s ease,
+		color 0.35s ease-in-out;
+}
+
+/* Hover: color fd1050 + efecto de escala */
+.button-black:hover {
+	background-color: #fd1050;
+	transform: scale(1.07);
+}
+
+/* Active (clic): un poco más oscuro y sin tanto zoom) */
+.button-black:active {
+	background-color: #d40e46;
+	transform: scale(1.03);
+}
+
+input.button-black[type="submit"],
+input.button-black[type="reset"],
+button.button-black {
+	background-color: #000 !important;
+	background-image: none !important;
+	color: #fff !important;
+	font-weight: 700;
+	border: none;
+	transform: scale(1);
+	transition:
+		background-color 0.35s ease-in-out,
+		transform 0.25s ease;
+}
+
+input.button-black[type="submit"]:hover,
+input.button-black[type="reset"]:hover,
+button.button-black:hover {
+	background-color: #fd1050 !important;
+	transform: scale(1.07);
+}
+
+input.button-black[type="submit"]:active,
+input.button-black[type="reset"]:active,
+button.button-black:active {
+	background-color: #d40e46 !important;
+	transform: scale(1.03);
+}
+
+.button-row {
+	width: 100%;
+	display: flex !important;
+	gap: 15px;
+	justify-content: center;
+}
+
+/* BOTÓN NUEVO*
+/* Botón de contorno blaco */
+.button-outline {
+    display: inline-block;
+    padding: 0.15em 1.3em; /* más pequeño */
+    font-size: 0.5em;     /* más proporcionado */
+    font-weight: 700;
+    border-radius: 0.35em;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff !important;
+    text-decoration: none;
+    cursor: pointer;
+	background-clip: padding-box;
+}
+
+.button-outline:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+.button-outline:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/*Logo de la página*/
+#logo-banner {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 1.5em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo-banner h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.6em;
+	letter-spacing: 0.2em;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+}
+
+#logo-banner p {
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	margin: 0.2em 0 0 0;
+	display: block;
+	letter-spacing: 0.2em;
+	font-size: 0.75em;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.35);
+}
+
+/*FIN DE LA NOTA*/
+
 
 /* Image */
 
@@ -2637,7 +2817,7 @@ button:active,
 		width: 275px;
 		z-index: 10002;
 		width: 275px;
-		background: #222729 url("images/overlay.png");
+		background: #000000 url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 	}
 
