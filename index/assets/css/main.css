@@ -1912,16 +1912,16 @@ article:last-child {
 	color: #fd1050;
 }
 
-.item:hover {
-	transform: scale(1.05);
-}
-
 /* Carrusel */
 .main-swiper .swiper-slide {
 	width: 250px;
 	/* Ajusta al tamaño de las tarjetas */
 	font-size: 17px;
 	/* Tamaño del texto */
+}
+
+.swiper-slide {
+    overflow: visible !important;
 }
 
 .swiper-button-next::after,
